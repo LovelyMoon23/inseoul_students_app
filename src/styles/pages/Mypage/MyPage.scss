@@ -3,4 +3,64 @@
 @import '../../init/Font.scss';
 @import '../../init/Measures.scss';
 @import '../../init/Reset.scss';
+@import '../../mediaQuery.scss';
 
+@media #{$phone} {
+  .user_area_wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    p:nth-child(even) {
+      padding: 4px 16px;
+      margin: 4.27% 0 3.2%;
+      height: 22px;
+      border-radius: 2px;
+      background-color: $greenery;
+      color: $white;
+      font-size: 0.625rem;
+      line-height: 14px;
+      text-align: center;
+      letter-spacing: -0.04em;
+    }
+    p:nth-child(odd) {
+      padding-bottom: 9.06%;
+      text-decoration: underline;
+      color: $silver;
+      font-size: 0.875rem;
+      line-height: 20px;
+      letter-spacing: -0.04em;
+    }
+  }
+  .seat_number {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 9.06% 0 5.06%;
+    border-bottom: 20px solid $titanium-white;
+  }
+  .mypage_personal_info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    div {
+      display: flex;
+      justify-content: space-between;
+      padding: 14.5px 0;
+      color: $dark-gray;
+      font-size: 1rem;
+      line-height: 23px;
+      letter-spacing: -0.04em;
+    }
+    div:nth-of-type(1) {
+      font-weight: 700;
+      font-family: 'NotoSansKRBold';
+      color: $night-rider;
+      font-size: 14px;
+      line-height: 20px;
+      letter-spacing: -0.04em;
+    }
+    div:nth-of-type(2) {
+      border-bottom: 1px solid $titanium-white;
+    }
+  }
+}

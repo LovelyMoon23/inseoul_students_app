@@ -1,8 +1,6 @@
-import '../styles/styles.scss'
+import '../styles/styles.scss';
 
-function Button() {
-  return(
-    <>
-    </>
-  )
+function Button({ children }) {
+  return <button className="main_button">{children}</button>;
 }
+export default Button;

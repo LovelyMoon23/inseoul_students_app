@@ -6,63 +6,158 @@
 @import '../../mediaQuery.scss';
 
 @media #{$phone} {
-  .wrap_type {
-    margin: 0 auto;
-    width: 100%;
-    .signin_wrap {
-      margin: $section_margin;
-      .signin_title_wrap {
-        .right_arrow_btn {
-          margin-top: $vertical_header;
-        }
-        .signup_title {
-          font-family: 'NotoSansKRBold';
-          font-size: 2.14em;
-          letter-spacing: -0.02em;
-          line-height: 43px;
-        }
-        .signup_subtitle {
-          margin-top: $vertical_space;
-          font-family: 'NotoSansKRRegular';
-          font-size: 16px;
-          letter-spacing: -0.04em;
-          line-height: 23px;
-          color: $dark-gray;
-        }
-      }
-      .signup_container {
-        margin-top: $vertical_section;
-        font-family: 'NotoSansKRRegular';
-        color: $dark-gray;
-        .branch_label {
-          display: flex;
-          flex-direction: column;
-          #branch {
-            margin: $vertical_icon_space 0;
-            height: 48px;
+  * {
+    background-color: $white_smoke;
+    .wrap_type {
+      max-width: 100%;
+      .signin_wrap {
+        margin-right: $section_margin;
+        .signin_title_wrap {
+          .right_arrow_btn {
+            margin-top: $vertical_header;
           }
-          .find_branch_caption {
-            font-size: 12px;
-            line-height: 17px;
+          .signup_title {
+            font-family: 'NotoSansKRBold';
+            font-size: 1.875rem;
+            letter-spacing: -0.02em;
+            line-height: 43px;
+          }
+          .signup_subtitle {
+            margin-top: $vertical_space;
+            font-family: 'NotoSansKRRegular';
+            font-size: 1rem;
             letter-spacing: -0.04em;
+            line-height: 23px;
+            color: $dark-gray;
           }
         }
-        .account_input_box {
-          margin-top: $vertical_space;
-          .input_large {
-            margin-bottom: $vertical_input_space;
-          }
-        }
-        .personal_info_select_content {
-          .personal_info_label {
+        .signup_container {
+          margin-top: $vertical_header_section;
+          font-family: 'NotoSansKRRegular';
+          color: $dark-gray;
+          .branch_label {
             display: flex;
             flex-direction: column;
-            .mobile_select_content {
-              width: 100%;
-              background-color: red;
-              margin-top: $vertical_input_space;
-              .select_small {
+            font-size: 0.875rem;
+            #branch {
+              margin: $vertical_icon_space 0;
+              height: 48px;
+              select option[value=''][disabled] {
+                display: none;
+              }
+            }
+            .find_branch_caption {
+              font-size: 0.75rem;
+              line-height: 17px;
+              letter-spacing: -0.04em;
+            }
+          }
+          .account_input_box {
+            margin-top: $vertical_section;
+            .accounts_label {
+              font-size: 0.875rem;
+            }
+          }
+          .personal_info_select_box {
+            margin-top: $vertical_section;
+            .personal_info_label {
+              display: flex;
+              flex-direction: column;
+              font-size: 0.875rem;
+              .birth_and_gender_wrap {
+                display: flex;
+                justify-content: space-between;
+              }
+              #name_input {
                 margin-bottom: $vertical_input_space;
+              }
+              #birth_day_input_wrap {
+                display: flex;
+                flex-direction: row;
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                appearance: none;
+                outline: 0;
+                width: 62.67%;
+                input {
+                  font-size: 16px;
+                  line-height: 23px;
+                  text-align: center;
+                  width: 100%;
+                  border: 0;
+                  background-color: $white;
+                }
+                span {
+                  color: $gainsboro;
+                  background-color: $white;
+                }
+              }
+              .gender_select_box {
+                width: 35.2%;
+                #gender_select {
+                  width: 100%;
+                }
+              }
+              .mobile_select_content {
+                width: 100%;
+                margin-top: $vertical_input_space;
+                display: flex;
+                justify-content: space-between;
+                .select_small {
+                  margin-bottom: $vertical_input_space;
+                }
+              }
+              .age_select_content {
+                .select_small {
+                  margin-right: $vertical_icon_space;
+                }
+              }
+            }
+            .address_input_content {
+              margin-top: $vertical_section;
+            }
+            #terms_check_box {
+              margin: 8.53% 0 9.06%;
+              #flex {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                span {
+                  background-color: $white;
+                  font-size: 12px;
+                  line-height: 17px;
+                  text-decoration-line: underline;
+                  color: $silver;
+                }
+
+                input[type='checkbox'] {
+                  /* 체크박스 기존 스타일 없애기 */
+                  position: absolute;
+                  padding: 0;
+                  border: 0;
+                  overflow: hidden;
+                }
+                label {
+                  background-color: $white;
+                  display: flex;
+                  flex-direction: row;
+                  justify-content: flex-start;
+                  align-items: center;
+                  line-height: 29px;
+
+                  svg {
+                    background-color: $white;
+                    margin-right: 13px;
+                    cursor: pointer;
+                  }
+                  span {
+                    background-color: $white;
+                    font-size: 0.875rem;
+                    line-height: 20px;
+                    text-decoration: none;
+                  }
+                }
               }
             }
           }

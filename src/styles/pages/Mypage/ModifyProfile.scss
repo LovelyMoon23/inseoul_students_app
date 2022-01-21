@@ -1,0 +1,40 @@
+@import '../../init/Color.scss';
+@import '../../init/Common.scss';
+@import '../../init/Font.scss';
+@import '../../init/Measures.scss';
+@import '../../init/Reset.scss';
+@import '../../component/Input.scss';
+@import '../../mediaQuery.scss';
+
+@media #{$phone} {
+  .subtitle {
+    padding-bottom: 4.27%;
+    font-weight: 700;
+    font-family: 'NotoSansKRBold';
+    color: $night-rider;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: -0.04em;
+  }
+  label {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: -0.04em;
+    color: $dark-gray;
+    #user_uneditable_input,
+    #user_editable_input {
+      margin: 2.13% 0 4.27%;
+    }
+
+    #guardian_select,
+    #guardian_mobile {
+      margin: 2.13% 0 4.27%;
+    }
+
+    select option[value=''][disabled] {
+      display: none;
+    }
+  }
+}

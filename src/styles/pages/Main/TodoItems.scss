@@ -1,0 +1,23 @@
+@import '../../init/Color.scss';
+@import '../../init/Common.scss';
+@import '../../init/Font.scss';
+@import '../../init/Measures.scss';
+@import '../../init/Reset.scss';
+@import '../../mediaQuery.scss';
+
+@media #{$phone} {
+  .plan_checkbox_wrap {
+    display: flex;
+    padding: 10px 0;
+    .checkbox {
+      display: flex;
+      flex: 1;
+      &.checked {
+        .plan_text {
+          text-decoration: line-through;
+          color: $silver;
+        }
+      }
+    }
+  }
+}

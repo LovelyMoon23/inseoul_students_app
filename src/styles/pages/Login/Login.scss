@@ -3,4 +3,97 @@
 @import '../../init/Font.scss';
 @import '../../init/Measures.scss';
 @import '../../init/Reset.scss';
+@import '../../mediaQuery.scss';
 
+@media #{$phone} {
+  .login_page_wrap {
+    overflow: hidden;
+    max-height: 100vh;
+
+    .login_title {
+      margin-top: 24.53%;
+      margin-bottom: 3.2%;
+      font-weight: 700;
+      font-family: 'NotoSansKRBold';
+      font-size: 1.875rem;
+      letter-spacing: -0.02em;
+      line-height: 43px;
+      .login_subtitle {
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 23px;
+        letter-spacing: -0.04em;
+        color: $dark-gray;
+        padding-bottom: 12.8%;
+      }
+    }
+    .input_box {
+      input:first-child,
+      :last-child {
+        margin-bottom: 4.27%;
+      }
+    }
+    .login_state {
+      padding-bottom: 73.6%;
+      input[type='checkbox'] {
+        /* 체크박스 기존 스타일 없애기 */
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        padding: 0;
+        border: 0;
+        overflow: hidden;
+        clip: rect(0 0 0 0);
+      }
+      label {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        line-height: 29px;
+
+        svg {
+          margin-right: 13px;
+          cursor: pointer;
+        }
+      }
+      span {
+        font-size: 0.875rem;
+        line-height: 20px;
+      }
+    }
+    .find_account_info {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      width: 53.86%;
+      padding-bottom: 10.66%;
+      margin: 25px auto 0 auto;
+      font-size: 12px;
+      line-height: 12px;
+      letter-spacing: -0.04em;
+      font-family: 'NotoSansKRRegular';
+      color: $dark-gray;
+
+      .findpw {
+        color: $dark-gray;
+        text-decoration: none;
+
+        &:last-child {
+          position: relative;
+
+          &:after {
+            content: '';
+            display: inline-block;
+            position: absolute;
+            right: 67px;
+            width: 1px;
+            height: 20px;
+          }
+        }
+      }
+    }
+  }
+}

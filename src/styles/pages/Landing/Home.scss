@@ -1,0 +1,21 @@
+@import '../../init/Measures.scss';
+@import '../../mediaQuery.scss';
+
+@media #{$phone} {
+  #wrap {
+    overflow: hidden;
+    margin: $section_margin;
+
+    .brand_img_container {
+      display: flex;
+      justify-content: center;
+      padding-top: 80%;
+    }
+    .home_footer {
+      padding-top: 85.2%;
+      .link_to_landing {
+        text-decoration: none;
+      }
+    }
+  }
+}

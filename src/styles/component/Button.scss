@@ -3,3 +3,23 @@
 @import '../init/Font.scss';
 @import '../init/Measures.scss';
 @import '../init/Reset.scss';
+
+.main_button {
+  font-family: 'NotoSansKRRegular';
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 23px;
+  text-align: center;
+  color: $white;
+  height: 48px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 16px;
+  border-radius: 8px;
+  border: none;
+  background: linear-gradient(90deg, #5bbacf 0%, #596aff 100%);
+  box-shadow: 0px 0px 8px rgba(51, 51, 51, 0.2);
+}

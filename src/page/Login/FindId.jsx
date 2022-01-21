@@ -1,9 +1,6 @@
-import '../../styles/styles.scss'
+import '../../styles/styles.scss';
 
 function FindId() {
-  return(
-<>
-</>
-  )
-} 
-export default FindId
+  return <></>;
+}
+export default FindId;

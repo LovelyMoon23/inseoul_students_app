@@ -1,0 +1,32 @@
+@import '../../../init/Color.scss';
+@import '../../../init/Common.scss';
+@import '../../../init/Font.scss';
+@import '../../../init/Measures.scss';
+@import '../../../init/Reset.scss';
+@import '../../../mediaQuery.scss';
+
+@media #{$phone} {
+  .address_label {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.875rem;
+    button {
+      margin-bottom: $vertical_input_space;
+    }
+    #searched_address {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      color: $night-rider;
+    }
+    #searching_address {
+      display: flex;
+      justify-content: space-between;
+      font-size: 1rem;
+      line-height: 23px;
+      svg {
+        background-color: $white;
+      }
+    }
+  }
+}

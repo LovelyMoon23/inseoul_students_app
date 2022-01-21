@@ -1,0 +1,15 @@
+@import '../../init/Color.scss';
+@import '../../init/Common.scss';
+@import '../../init/Font.scss';
+@import '../../init/Measures.scss';
+@import '../../init/Reset.scss';
+@import '../../mediaQuery.scss';
+
+@media #{$phone} {
+  .noti_wrap {
+    background-color: $white_smoke;
+  }
+  .push_page_container {
+    width: 100%;
+  }
+}

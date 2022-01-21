@@ -1,0 +1,36 @@
+@import '../../../init/Color.scss';
+@import '../../../init/Common.scss';
+@import '../../../init/Font.scss';
+@import '../../../init/Measures.scss';
+@import '../../../init/Reset.scss';
+@import '../../../mediaQuery.scss';
+
+@media #{$phone} {
+  .duplicated_id_check_wrap {
+    display: flex;
+    margin-top: 2.13%;
+    #duplicated_id_check_input {
+      flex: 1;
+      margin: 0 2.13% $vertical_input_space 0;
+    }
+    #duplicated_id_check_btn {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      padding: 12px 16px;
+      height: 48px;
+      font-family: 'NotoSansKRRegular';
+      background: #ffffff;
+      border: 1px solid #0085ff;
+      box-sizing: border-box;
+      border-radius: 8px;
+      font-size: 16px;
+      line-height: 23px;
+      text-align: center;
+
+      /* font point */
+
+      color: #0085ff;
+    }
+  }
+}

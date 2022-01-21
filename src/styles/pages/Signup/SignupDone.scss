@@ -1,0 +1,32 @@
+@import '../../init/Measures.scss';
+@import '../../mediaQuery.scss';
+
+@media #{$phone} {
+  .landing_page_wrap {
+    overflow: hidden;
+    .signup_done_noti {
+      margin-top: 24.53%;
+      margin-bottom: 3.2%;
+      font-weight: 700;
+      font-family: 'NotoSansKRBold';
+      font-size: 1.875rem;
+      letter-spacing: -0.02em;
+      line-height: 43px;
+    }
+    #container p:first-child {
+      font-weight: 400;
+      font-size: 1rem;
+      line-height: 23px;
+      letter-spacing: -0.04em;
+      color: $dark-gray;
+    }
+    .signup_done_page_footer {
+      position: absolute;
+      padding-top: 129.33%;
+      width: 90vw;
+      .link_to_login {
+        text-decoration: none;
+      }
+    }
+  }
+}

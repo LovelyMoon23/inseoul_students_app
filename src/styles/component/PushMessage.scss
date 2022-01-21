@@ -1,0 +1,35 @@
+@import '../init/Color.scss';
+@import '../init/Common.scss';
+@import '../init/Font.scss';
+@import '../init/Measures.scss';
+@import '../init/Reset.scss';
+@import '../mediaQuery.scss';
+
+@media #{$phone} {
+  .push_msg_wrap {
+    width: 100%;
+    .msg_wrap {
+      background-color: $white;
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 16px;
+      height: 31.2%;
+      box-shadow: 0px 0px 8px rgba(51, 51, 51, 0.2);
+      border-radius: 16px;
+      margin: 4.27% 0;
+      ul,
+      li {
+        background: $white;
+      }
+      .msg_header {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        list-style: none;
+      }
+    }
+  }
+}

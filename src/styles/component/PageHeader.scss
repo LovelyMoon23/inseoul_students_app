@@ -1,0 +1,22 @@
+@import '../init/Color.scss';
+@import '../init/Common.scss';
+@import '../init/Font.scss';
+@import '../init/Measures.scss';
+@import '../init/Reset.scss';
+@import '../mediaQuery.scss';
+
+@media #{$phone} {
+  .page_header {
+    display: flex;
+    align-items: center;
+    padding: 11.73% 0 6.4%;
+    p {
+      position: relative;
+      width: 80%;
+      text-align: center;
+      font-weight: 500;
+      font-size: 1rem;
+      line-height: 23px;
+    }
+  }
+}

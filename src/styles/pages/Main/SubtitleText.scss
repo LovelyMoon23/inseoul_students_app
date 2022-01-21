@@ -1,0 +1,37 @@
+@import '../../init/Color.scss';
+@import '../../init/Common.scss';
+@import '../../init/Font.scss';
+@import '../../init/Measures.scss';
+@import '../../init/Reset.scss';
+@import '../../mediaQuery.scss';
+
+@media #{$phone} {
+  .main_page_subtitle {
+    display: flex;
+    p {
+      flex: 1;
+      font-family: 'NotoSansKRBold';
+      font-size: 1rem;
+      line-height: 23px;
+      letter-spacing: -0.04em;
+      color: $night-rider;
+    }
+    div {
+      align-items: center;
+      display: flex;
+      list-style: none;
+      font-family: 'NotoSansKRRegular';
+      color: $dodger-blue;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 0.75rem;
+      line-height: 16px;
+      text-align: right;
+      letter-spacing: -0.04em;
+      :visited {
+        color: $dodger-blue;
+        text-decoration: none;
+      }
+    }
+  }
+}

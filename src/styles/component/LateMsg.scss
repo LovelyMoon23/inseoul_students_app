@@ -1,0 +1,123 @@
+@import '../init/Color.scss';
+@import '../init/Common.scss';
+@import '../init/Font.scss';
+@import '../init/Measures.scss';
+@import '../init/Reset.scss';
+@import '../mediaQuery.scss';
+
+@media #{$phone} {
+  .late_msg_wrap {
+    background-color: $white;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 16px;
+    height: 88.27%;
+    box-shadow: 0px 0px 8px rgba(51, 51, 51, 0.2);
+    border-radius: 16px;
+    margin: auto 4.27%;
+    border: 1px solid #0085ff;
+    ul,
+    li {
+      background: $white;
+      list-style: none;
+    }
+    .msg_header {
+      align-items: center;
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      list-style: none;
+      .noti_subtitle {
+        padding-bottom: 4.27%;
+        font-weight: 700;
+        font-family: 'NotoSansKRBold';
+        color: $night-rider;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: -0.04em;
+      }
+    }
+    .late_caption {
+      li:nth-of-type(odd) {
+        padding-bottom: 4.27%;
+        font-family: 'NotoSansKRRegular';
+        color: $night-rider;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: -0.08em;
+      }
+      li:nth-of-type(even) {
+        padding-bottom: 4.27%;
+        font-size: 12px;
+        line-height: 17px;
+        letter-spacing: -0.08em;
+        color: #bbbbbb;
+      }
+    }
+
+    hr {
+      width: 100%;
+      border: 1px solid $titanium-white;
+      margin-bottom: 2.13%;
+    }
+
+    .arrival_time_select_wrap {
+      display: flex;
+      flex-direction: column;
+      background-color: $white;
+      font-weight: 700;
+      font-family: 'NotoSansKRBold';
+      font-size: 14px;
+      line-height: 20px;
+      color: $night-rider;
+
+      input[type='checkbox'] {
+        /* 체크박스 기존 스타일 없애기 */
+        position: absolute;
+        // width: 1px;
+        // height: 1px;
+
+        // margin: -1px;
+        // padding: 0;
+        // border: 0;
+        // overflow: hidden;
+        // clip: rect(0 0 0 0);
+      }
+      label {
+        background-color: $white;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        line-height: 29px;
+
+        svg {
+          background-color: $white;
+          margin-right: 4px;
+          cursor: pointer;
+        }
+        p {
+          background-color: $white;
+        }
+      }
+    }
+    .submit_arrival_time_btn {
+      width: 100%;
+      margin-top: 4.27%;
+      border: none;
+      background-color: #fff;
+      font-size: 14px;
+      line-height: 14px;
+      /* identical to box height, or 100% */
+
+      text-align: center;
+      letter-spacing: -0.04em;
+
+      /* font point */
+
+      color: #0085ff;
+    }
+  }
+}
