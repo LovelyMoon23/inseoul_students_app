@@ -14,6 +14,7 @@ function PushNotification() {
       </header>
       <div id="container" className="push_page_container">
         <div id="content">
+          <PushMessage />
           {openMsg ? (
             <LateMsg
               openMsg={openMsg}

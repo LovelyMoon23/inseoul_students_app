@@ -1,5 +1,6 @@
 import { ReactComponent as UncheckedRadioBtn } from '../assets/unchecked.svg';
 import { ReactComponent as CheckedRadioBtn } from '../assets/checked.svg';
+import { ReactComponent as Bookmark } from '../assets/bi_bookmark-star-fill.svg';
 function LateMsg({
   openMsg,
   setOpenMsg,
@@ -24,12 +25,7 @@ function LateMsg({
     >
       <ul className="msg_header">
         <li className="noti_subtitle">등원 시간이 지났습니다.</li>
-        <img
-          src="../assets.bookmark.png"
-          width="14"
-          height="14"
-          alt="bookmark"
-        />
+        <Bookmark width="24" height="24" alt="bookmark" />
       </ul>
       <hr />
       <ul className="late_caption">
@@ -39,13 +35,13 @@ function LateMsg({
       <hr />
       <div className="arrival_time_select_wrap">
         사유입력
-        <input
+        {/* <input
           type="checkbox"
           id="reason_check"
           onChange={() => handleArrivalTimeSubmit1()}
           // 지각 예정시간 체크
           checked={isReasonCheck}
-        />
+        /> */}
         <label htmlFor="arrival_time_check">
           {isReasonCheck ? <CheckedRadioBtn /> : <UncheckedRadioBtn />}
           <p>곧 도착 예정</p>

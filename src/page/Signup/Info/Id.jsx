@@ -4,6 +4,7 @@ import Button from '../../../components/Button';
 import ResultText from '../../../components/ResultText';
 
 function Id({ handleInput, signupForm }) {
+  // 이메일 형식으로 가입하는 것이 조건
   const reg_id = new RegExp(
     /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/
   );

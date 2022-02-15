@@ -9,24 +9,24 @@ function Landing() {
         IN서울
       </div>
       <div id="container" className="landing_page_container">
-        <div id="content">
-          <ul>
-            <li>
-              공부는 집중력과 노력입니다. <br />
-              누적 다운로드 4,000만의 유저의 선택
-            </li>
-            <li>
-              공부는 집중력과 노력입니다.
-              <br />
-              누적 다운로드 4,000만의 유저의 선택
-            </li>
-            <li>
-              공부는 집중력과 노력입니다.
-              <br />
-              누적 다운로드 4,000만의 유저의 선택
-            </li>
-          </ul>
-        </div>
+        <ul>
+          <li>
+            공부는 집중력과 노력입니다. <br />
+            누적 다운로드 4,000만의 유저의 선택
+          </li>
+          <br />
+          <li>
+            공부는 집중력과 노력입니다.
+            <br />
+            누적 다운로드 4,000만의 유저의 선택
+          </li>
+          <br />
+          <li>
+            공부는 집중력과 노력입니다.
+            <br />
+            누적 다운로드 4,000만의 유저의 선택
+          </li>
+        </ul>
       </div>
       <div id="footer" className="landing_page_footer">
         <p>

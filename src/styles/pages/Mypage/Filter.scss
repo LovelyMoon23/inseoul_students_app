@@ -1,0 +1,21 @@
+.filter_wrap {
+  h1 {
+    color: #0085ff;
+    padding-bottom: 10px;
+  }
+  input {
+    width: 100%;
+  }
+  h2 {
+    text-align: center;
+  }
+  .students_list_wrap {
+    padding: 20px;
+    .students_list {
+      padding-top: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}

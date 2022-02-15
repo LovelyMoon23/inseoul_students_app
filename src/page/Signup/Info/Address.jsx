@@ -52,7 +52,7 @@ function Address({ address, setAddress, isOpenPost, setIsOpenPost }) {
         name="birth"
         className="input_large"
         placeholder="상세 주소를 입력해 주세요."
-        autocomplete="off"
+        autoComplete="off"
       />
     </label>
   );

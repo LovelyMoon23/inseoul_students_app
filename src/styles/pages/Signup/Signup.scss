@@ -123,6 +123,11 @@
                 flex-direction: row;
                 justify-content: space-between;
                 align-items: center;
+                .test {
+                  display: flex;
+                  justify-content: center;
+                  align-content: center;
+                }
                 span {
                   background-color: $white;
                   font-size: 12px;
@@ -131,13 +136,13 @@
                   color: $silver;
                 }
 
-                input[type='checkbox'] {
-                  /* 체크박스 기존 스타일 없애기 */
-                  position: absolute;
-                  padding: 0;
-                  border: 0;
-                  overflow: hidden;
-                }
+                // input[type='checkbox'] {
+                //   /* 체크박스 기존 스타일 없애기 */
+                //   position: absolute;
+                //   padding: 0;
+                //   border: 0;
+                //   overflow: hidden;
+                // }
                 label {
                   background-color: $white;
                   display: flex;

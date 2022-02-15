@@ -10,6 +10,7 @@ import MyPage from './page/Mypage/MyPage';
 import ModifyProfile from './page/Mypage/ModifyProfile';
 import PushNotification from './page/Mypage/PushNotification';
 import TodoTemplate from './page/Main/TodoTemplate';
+import Filter from './page/Mypage/Filter';
 
 function Router() {
   return (
@@ -17,8 +18,8 @@ function Router() {
       <BrowserRouter>
         <Routes>
           <Route exact path="/" element={<Home />} />
-          <Route exact path="/login" element={<Login />} />
           <Route exact path="/landing" element={<Landing />} />
+          <Route exact path="/login" element={<Login />} />
           <Route exact path="/signup" element={<Signup />} />
           <Route exact path="/signupdone" element={<SignupDone />} />
           <Route exact path="/main" element={<Main />} />
@@ -26,6 +27,7 @@ function Router() {
           <Route exact path="/edit" element={<ModifyProfile />} />
           <Route exact path="/todo" element={<TodoTemplate />} />
           <Route exact path="/notify" element={<PushNotification />} />
+          <Route exact path="/filter" element={<Filter />} />
         </Routes>
       </BrowserRouter>
     </React.StrictMode>

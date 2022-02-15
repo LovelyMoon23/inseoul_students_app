@@ -13,8 +13,10 @@
       overflow: hidden;
       margin-right: $section_margin;
       .brand_title {
-        margin-top: 24.53%;
-        margin-bottom: 6.4%;
+        // margin-top: 24.53%;
+        margin-top: 88px;
+        margin-bottom: 8px;
+        // margin-bottom: 6.4%;
         font-weight: 700;
         font-family: 'NotoSansKRBold';
         font-size: 1.875rem;
@@ -22,29 +24,30 @@
         line-height: 43px;
       }
       .landing_page_container {
-        margin-bottom: 86.93%;
+        margin-bottom: 338px;
+        // margin-bottom: 86.93%;
         ul {
           list-style-type: none;
           li {
             font-family: 'NotoSansKRRegular';
-            font-weight: 700;
-            font-size: 1rem;
+            font-weight: 400;
+            font-size: 16px;
             line-height: 23px;
             letter-spacing: -0.04em;
             color: $dark-gray;
-            padding-bottom: 7%;
           }
         }
       }
       .landing_page_footer {
         p {
           font-family: 'NotoSansKRThin';
-          font-size: 0.75rem;
+          font-size: 12px;
           line-height: 15px;
           text-align: center;
           letter-spacing: -0.04em;
           color: $dark-gray;
-          margin-bottom: 5.87%;
+          margin-bottom: 29px;
+          // margin-bottom: 5.87%;
           font-weight: 400;
         }
         .link_to_login {

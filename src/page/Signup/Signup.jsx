@@ -1,5 +1,6 @@
 /* eslint-disable */
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import Button from '../../components/Button';
 import Id from './Info/Id';
 import Password from './Info/Password';
@@ -26,6 +27,18 @@ function Signup() {
     school: '',
     address: '',
   });
+  console.log(signupForm > 1);
+
+  const checkIt = e => {
+    e.preventDefault();
+    if (signupForm > 1) {
+      navigate('/complete');
+      return true;
+    } else {
+      alert('입력하지 않은 정보가 있습니다.');
+      return false;
+    }
+  };
 
   const handleInput = e => {
     const { value, name } = e.target;
@@ -55,7 +68,7 @@ function Signup() {
             입력해 주세요.
           </p>
         </div>
-        <div id="container" className="signup_container">
+        <form className="signup_container" id="loginForm" onSubmit={checkIt}>
           <div className="branch_select_box">
             <label htmlFor="branch" className="branch_label">
               지점 선택
@@ -99,6 +112,7 @@ function Signup() {
                   className="birth_day_input_box"
                   className="input_small"
                   id="birth_day_input_wrap"
+                  autoComplete="off"
                 >
                   <input
                     type="number"
@@ -206,8 +220,8 @@ function Signup() {
                     //나중에 체크가 안되어있으면 alert창으로 동의하지 않으면 가입 안된다고 할때 쓸 checked임
                   />
                   <label htmlFor="terms_check">
-                    {isTermsCheck ? <CheckedRadioBtn /> : <UncheckedRadioBtn />}
-                    <span> 전체 동의하기 </span>
+                    {/* {isTermsCheck ? <CheckedRadioBtn /> : <UncheckedRadioBtn />} */}
+                    <span className="agree_all_terms"> 전체 동의하기 </span>
                   </label>
                 </div>
                 <span>약관확인하기</span>
@@ -215,12 +229,13 @@ function Signup() {
             </div>
             <Button
               type="submit"
+              form="loginForm"
               // disabled={signupBtn ? '' : 'disabled'}
             >
               가입하기
             </Button>
           </div>
-        </div>
+        </form>
       </div>
     </div>
   );

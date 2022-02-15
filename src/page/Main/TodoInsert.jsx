@@ -1,4 +1,5 @@
 import { useCallback, useState } from 'react';
+import { ReactComponent as Plus } from '../../assets/plus.svg';
 import '../../styles/styles.scss';
 
 function TodoInsert({ onInsert }) {
@@ -27,10 +28,11 @@ function TodoInsert({ onInsert }) {
           onChange={handlePlanInput}
           value={planValue}
         />
-        <img
-          src="../assets/plus.png"
-          width="14"
-          height="14"
+
+        <Plus
+          style={{ marginLeft: '5px' }}
+          leftwidth="20"
+          height="20"
           alt="button for adding plans "
         />
       </div>
